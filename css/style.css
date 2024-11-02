@@ -1,0 +1,733 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+    width: 960px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+
+/*センタリング
+---------------------*/
+.text-align{
+	text-align: center;
+}
+
+
+
+/*
+---------------------*/
+.container{
+	margin: 0 auto;
+}
+
+
+/*横並び
+---------------------*/
+.field{
+	display: flex;
+	justify-content: center;
+}
+
+
+/*title box
+---------------------*/
+.title_box {
+    background: url(../img/mainbg.png);
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    color: white;
+}
+
+
+/*
+---------------------*/
+h1 {
+    font-size: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+---------------------*/
+.title_cheeze {
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+---------------------*/
+.title_comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/*
+---------------------*/
+.menu {
+    /* background: url(../img/header_logo.png); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 21px;
+    height: 80px;
+    border: 1px solid;
+    border-color: #efefef;
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+    background-color: #fafafa;
+}
+
+
+/*
+---------------------*/
+.ABOUT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+---------------------*/
+.text_yellow {
+    color: #ffd61a;
+    font-size: 24px;
+}
+
+/*
+---------------------*/
+.hight120 {
+    height: 120px;
+}
+
+/*
+---------------------*/
+.hight24 {
+    height: 24px;
+}
+
+/*
+---------------------*/
+.hight64 {
+    height: 64px;
+}
+
+/*
+---------------------*/
+.hight40 {
+    height: 40px;
+}
+
+/*
+---------------------*/
+.hight80 {
+    height: 80px;
+}
+
+/*
+---------------------*/
+.photo_space {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 200PX;
+
+}
+
+/*
+---------------------*/
+.COURSE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+---------------------*/
+.text_black {
+    font-size: 24px;
+    color: #222222;
+}
+
+/*
+---------------------*/
+.gray_box {
+    background-color: lightgray;
+    padding: 48px;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+
+}
+/*
+---------------------*/
+.farm {
+    display: flex;
+}
+
+/*
+---------------------*/
+.farm_left {
+    width: 480px;
+    height: 320px;
+}
+
+/*
+---------------------*/
+.farm_right {
+    width: 480px;
+    height: 320px;
+}
+
+/*
+---------------------*/
+.image_farm {
+    width: 100%;
+}
+
+/*
+---------------------*/
+.box_heading {
+    font-size: 24px;
+}
+/*
+---------------------*/
+.box_text {
+    font-size: 14px;
+}
+
+/*
+---------------------*/
+.knowledge {
+    display: flex;
+}
+
+/*
+---------------------*/
+.knowledge_right {
+    width: 480px;
+    height: 320px;
+}
+
+/*
+---------------------*/
+.knowledge_left {
+    width: 480px;
+    height: 320px;
+}
+
+/*
+---------------------*/
+.image_tasting {
+    width: 480px;
+    height: 320px;
+}
+
+/*
+---------------------*/
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+---------------------*/
+.hight32 {
+    height: 32px;
+}
+
+/*
+---------------------*/
+.hight24 {
+    height: 24px;
+}
+
+/*
+---------------------*/
+.hight56 {
+    height: 56px;
+}
+
+/*
+---------------------*/
+.hight48 {
+    height: 48px;
+}
+
+/*
+---------------------*/
+.space32 {
+    height: 32px;
+    width: 32px;
+}
+/*
+---------------------*/
+.news_box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/*
+---------------------*/
+.news_space {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+/*
+---------------------*/
+.ACCESS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fafafa;
+}
+
+/*
+---------------------*/
+.ACCESS_left {
+    padding-right: 48px;
+}
+
+/*
+---------------------*/
+.ACCESS_imformation {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+---------------------*/
+.CONTACT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+---------------------*/
+.form_imformation {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+---------------------*/
+.form_left {
+    padding-right: 120px;
+}
+
+/*
+---------------------*/
+.form1 {
+    width: 328px;
+    height: 36px;
+    /* background: #000; */
+    border-color: #bfbfbf;
+    padding: 10px;
+    border: 1px solid;
+    /* border-top-color: black; */
+    /* border-right-color: red; */
+    /* border-bottom-color: blue; */
+    /* border-left-color: green; */
+    /* overflow: hidden; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+/*
+---------------------*/
+.form2 {
+    width: 328px;
+    height: 108px;
+    /* background: #000; */
+    border-color: #bfbfbf;
+    padding: 10px;
+    border: 1px solid;
+    /* border-top-color: black; */
+    /* border-right-color: red; */
+    /* border-bottom-color: blue; */
+    /* border-left-color: green; */
+    /* overflow: hidden; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+/*
+---------------------*/
+.form3 {
+    width: 20px;
+    height: 20px;
+    background: lightgray;
+    /* border-color: #bfbfbf; */
+    /* padding: 10px; */
+    
+    /* border: 1px solid; */
+    /* border-top-color: black; */
+    /* border-right-color: red; */
+    /* border-bottom-color: blue; */
+    /* border-left-color: green; */
+    /* overflow: hidden; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+/*
+---------------------*/
+.check_box {
+    display: flex;
+}
+
+/*
+---------------------*/
+.width40 {
+    width: 40px;
+}
+
+/*
+---------------------*/
+footer {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #707070;
+    font-size: 18px;
+    color: white;
+}
+
+/*
+---------------------*/
+.page_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+---------------------*/
+.yellow_botan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 298px;
+    height: 54px;
+    background-color: #ffd61a;
+    font-size: 18px;
+    color: whitesmoke;
+
+}
+/*
+---------------------*/
+.text_page_top {
+    text-align: center;
+    font-size: 11px;
+    color: #fafafa;
+
+    /* width: 60px; */
+    /* height: 60px; */
+    /* background-color: #707070; */
+
+        /* display: flex; */
+    /* flex-direction: column-reverse; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-size: 11px; */
+    /* color: #fafafa; */
+
+}
+/*
+---------------------*/
+.icon_page_top {
+    width: 60px;
+    height: 60px;
+    background-color: #707070;
+    display: block;
+	/* width: 80px; */
+	/* height: 36px; */
+	/* line-height: 36px; */
+	/* text-align: center; */
+	margin-left: auto;
+	/* background: #338DC9; */
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 100;
+}
+
+.registration-form {
+    font-size: 12px;
+    width: fit-content;
+    padding: 20px;
+    background: #dadada;
+    border-radius: 15px;
+  }
+  
+  h2 {
+    grid-column: span 2;
+  }
+  
+  form {
+    /* display: grid */
+    /* flex-direction: column; */
+    /* grid-template-columns: 328px 328px; */
+    grid-gap: 120px;
+  }
+  
+  input:not([type='checkbox']) {
+    width: 100%;
+    height: 30px;
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  
+  .hobby-selection {
+    display: flex;
+  }
+  
+  .hobby-selection label {
+    padding-top: 2px;
+    margin-right: 10px;
+  }
+  
+  button {
+    grid-column: span 2;
+    justify-self: end;
+  }
+
+  #form_name {
+    border: 1px solid #bfbfbf;  /* 枠線 */
+    /* border-color: #bfbfbf; */
+    /* border-radius: 0.67em;   角丸 */
+    /* padding: 0.5em;          内側の余白量 */
+    /* background-color: snow;  背景色 */
+    width: 328px;             /* 横幅 */
+    height: 36px;           /* 高さ */
+    /* font-size: 1em;          文字サイズ */
+    /* line-height: 1.2;        行の高さ */
+
+  }
+
+  .form_1 {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .space120 {
+    width: 120px;
+  }
+
+  #form_kana {
+    border: 1px solid #bfbfbf;  /* 枠線 */
+    width: 328px;             /* 横幅 */
+    height: 36px;           /* 高さ */
+
+  }
+
+  .form_2 {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  #form_mail {
+    border: 1px solid #bfbfbf;  /* 枠線 */
+    width: 328px;             /* 横幅 */
+    height: 36px;           /* 高さ */
+
+  }
+
+  .form_3 {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+
+  #form_detail {
+    border: 1px solid #bfbfbf;  /* 枠線 */
+    width: 328px;             /* 横幅 */
+    height: 108px;           /* 高さ */
+
+  }
+
+  .form_5 {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .space40 {
+    width: 40px;
+  }
+
+  .for_checkbox {
+    display: flex;
+
+  }
+
+  .answer_checkbox {
+    font-size: 14px;
+    /* inline-size: 24px; */
+    /* block-size: 24px; */
+
+  }
+
+  #checkbox1 {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  #checkbox2 {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  #checkbox3 {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  #checkbox4 {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  .answer_reason {
+    display: flex;
+  }
+
+  .answer_reason_left {
+    width: 300px;
+    padding-right: 120px;
+;
+  }
+
+  .answer_detail {
+    display: flex;
+  }
+
+  .answer_detail_left {
+    width: 300px;
+    padding-right: 120px;
+;
+  }
+
+  .answer_mail {
+    display: flex;
+  }
+
+  .answer_mail_left {
+    width: 300px;
+    padding-right: 120px;
+;
+  }
+
+  .answer_kana {
+    display: flex;
+  }
+
+  .answer_kana_left {
+    width: 300px;
+    padding-right: 120px;
+;
+  }
+
+  .answer_name {
+    display: flex;
+  }
+
+  .answer_name_left {
+    width: 300px;
+    padding-right: 120px;
+;
+  }
+
+  .text_More {
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-content: center;
+    width: 300px;
+    height: 60px;
+    background-color: #ffd700;
+    color: #fff;
+    /* padding: 10px 30px; */
+    /* text-decoration: none; */
+    font-size: 21px;
+    /* outline: 1px solid; */
+    /* outline-color: #ffd700; */
+    /* outline-offset: 0px; */
+    /* display: inline-block; */
+    /* transition: .3s; */
+  }
+
+  .More {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
